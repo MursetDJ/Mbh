@@ -188,8 +188,8 @@ h2.bnr-sub-title
     font-weight: 300;
     line-height: 24px;
     padding: 10px 30px;
-    border-radius: 60px;
-    margin: 50px 10px 0 0;
+    border-radius: 120px;
+    margin: 50px 10px 0 86%;
     outline: none !important;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -199,7 +199,7 @@ h2.bnr-sub-title
 
 .btn-download
 {
-    background-color: #be9e21;
+    background-color: #002147;
 }
 .btn-more, .btn-more:focus
 {
