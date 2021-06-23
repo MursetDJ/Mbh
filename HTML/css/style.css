@@ -558,11 +558,11 @@ contact
 }
 .btn-submit, .btn-submit:hover, .btn-submit:focus
 {
-    background-color: transparent;
+    background-color: #000000;
     border-radius: 60px;
-    color: #be9e21;
+    color: rgb(255, 255, 255);
     font-weight: 400;
-    border: 1px solid #be9e21;
+    border: 1px solid #ffffff;
     font-size: 14px;
     padding: 6px 20px;
 }
@@ -582,7 +582,13 @@ contact
 .contact-form input.form-control{
     color: #fff;
 }
-
+.distanciamiento{
+    margin-top: 5%;
+    margin-left: -5px;
+}
+.textoaux{
+    margin-top: 10px;
+}
 .validation {
     color: red;
     display:none;
@@ -630,7 +636,18 @@ contact
 ***********************************/
 #footer
 {
-    padding: 20px 0px;
+   
+    background-color: gray;
+    padding: 50px 20px;
+}
+.relleno{
+    margin-left: 150px;
+    box-sizing: content-box;
+    width: 40%;
+    padding: 10%;
+    align-items: flex-end;
+    background-color:rgba(255, 255, 255, 0.521);
+   
 }
 .scrollToTop {
     position: fixed;

@@ -14,30 +14,50 @@
     MBH Group S.A.C.
 </title>
 </head>
-<body>
-    <header><h1>INICIO DE SESION</h1></header> 
-    <section>
-        <body><h2>Usuario</h2></body>
-        </section>
-        <section>
-            <input type="text" placeholder="Ingresa usuario">
-        </section>
-        <section>
-            <body>
-                <h2>Contraseña</h2>
-            </body>
-        </section>
-        <section>
+<body class="bg-color">
+    <header id="main-header">
+        <h1>INICIO DE SESION</h1>
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#main-header">Inicio de sesion</a></li>
+                <li class=""><a href="#feature">Interfaz</a></li>
+                <li class=""><a href="#service">Inpeccion</a></li>
+                <li class=""><a href="#portfolio">Observacion</a></li>
+                <li class=""><a href="#testimonial">Reunion</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="relleno">
+        <div>
+        <h2>USUARIO</h2>
+        
+            <input type="text" placeholder="Ingresa usuario">    
+        <h2>CONTRASEÑA</h2>       
             <input type="password" placeholder="Ingresa contraseña">
-        </section>
-        <section>
-            <a href="Interfaz.html">¿Olvidaste tu contraseña?</a>
-        </section>
-            <button type="submit" >
+        </div>
+        <div class="textoaux">
+            <a href="Interfaz.html" >¿Olvidaste tu contraseña?</a>
+        </div>
+        <div class="distanciamiento">
+            <button class="btn-submit" type="submit" >
                 Ingresar
             </button>
-            <button>
+       
+        
+        <button class="btn-submit">
                 Registrar
             </button>
-        
+        </div>
+        </div>    
 </body>
