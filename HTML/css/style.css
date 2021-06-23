@@ -89,7 +89,7 @@ HEADER
 }
 .bg-color
 {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 176, 246);
     min-height: 650px;
 }
 #main-header
@@ -145,12 +145,12 @@ HEADER
     transition: color 0.2s ease-out;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #be9e21;
+    color: #ffffff;
     background-color: transparent;
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
     background-color: transparent;
-    color: #be9e21;
+    color: #ffffff;
 }
 .banner-info
 {
