@@ -13,8 +13,8 @@
 <title>
     MBH Group S.A.C.
 </title>
-</head>
-<body class="bg-color">
+</head>|
+<body class="bg-color">|
     <header id="main-header">
         <h1>DATOS DE LA OBSERVACION</h1>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -39,43 +39,108 @@
         </nav>
       </header>
       <div class="fondo">
-       
-          <br/>
-        <h3>Procedimiento a observar <input type="text"> </h3>
-        <br/>
-        <h3>Fecha de observacion<input type="date"> </h3>
-        <br/>
-        <h3>Periodicidad 
-          <select>
-            <option value="0"> Seleccione una opcion</option>
-            <option value="1"> Diaria</option>
-            <option value="2"> Semanal</option>
-            <option value="3"> Mensual</option>
-            <option value="4"> Anual</option>
-            <option value="5"> Sin periodicidad</option>
-          </select></h3>
-          <br/>
-          <h3>Tipo
-            <select>
-              <option value="0"> Seleccione una opcion</option>
-              <option value="1"> Programada</option>
-              <option value="2"> No programada</option>
-            </select>
-        </h3>
-        <br/>
-        <h3>Clasificacion
-          <input type="text">
-        </h3>  
-        <br/>       
-        <h3>
-          <input type="text" placeholder="Area observada"> <input type="text" placeholder="Subarea observada">
-        </h3>
-        <br/>
-        <h3>
-          <input type="text" placeholder="Empresa Observada"> <input type="checkbox">Es interna
-        </h3>
-        <br/>
-        <h3><input type="text" placeholder="Responsable del Área (DNI o fotocheck)" size="35"></h3>
+      <div class="alineacioncentro">
+        <table border="0">
+          <tr>
+            <td width="50%">
+            <h3>Procedimiento a observar  </h3>
+           </td>
+           <td width="50%">
+            <input size="40px" type="text">
+           </td>
+            <br/>
+          </tr>
+          <tr>
+            <td width="50%">
+              <h3>Fecha de observacion</h3>
+             </td>
+             <td width="50%">
+              <input size="60px" type="date">
+             </td>
+              <br/>
+          </tr>
+          <tr>
+            <td width="50%">
+              <h3>Periodicidad </h3>
+             </td>
+             <td width="50%">
+              <select>
+                <option value="0"> Seleccione una opcion</option>
+                <option value="1"> Diaria</option>
+                <option value="2"> Semanal</option>
+                <option value="3"> Mensual</option>
+                <option value="4"> Anual</option>
+                <option value="5"> Sin periodicidad</option>
+              </select></h3>
+             </td>
+              <br/>
+          </tr>
+          <tr>
+            <td width="50%">
+              <h3>Tipo </h3>
+             </td>
+             <td width="50%">
+              <select>
+                  <option value="0"> Seleccione una opcion</option>
+                  <option value="1"> Programada</option>
+                  <option value="2"> No programada</option>
+                </select>
+              </select></h3>
+             </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <h3>Clasificacion</h3>
+             </td>
+             <td width="50%">
+              <input size="40px" type="text">
+             </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <h3>Clasificacion</h3>
+             </td>
+             <td width="50%">
+              <input size="40px" type="text">
+             </td>
+          </tr>
+          <tr>
+            <td>
+              <br/>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <input type="text" placeholder="Area observada" size="38px"> 
+             </td>
+             <td width="50%">
+              <input type="text" placeholder="Subarea observada" size="38px">
+             </td>
+          </tr>
+          <tr>
+            <td>
+              <br/>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%">
+              <input type="text" placeholder="Empresa Observada" size="38px">
+             </td>
+             <td width="50%">
+              <input type="checkbox">Es interna
+             </td>
+          </tr>
+          <tr>
+            <td>
+              <br/>
+            </td>
+          </tr>
+          <td width="50%">
+            <input type="text" placeholder="Responsable del Área (DNI o fotocheck)" size="40px">
+           </td>    
+        </tr>
+        </table>
+      </div>
         <div class="alineacionderecha">
           <br/>
           <h3>Descripcion de la observacion</h3>
@@ -83,10 +148,13 @@
         <h4>Evidencia <input type="file" id="file"> <label for="file" class="btn-submit">Subir evidencia</label> Max 2Mb</h4>
         <div class="distanciamientoObservacion">
             <button class="btn-submit" type="submit" >
-                Ingresar
+                Enviar
             </button>
+            <button class="btn-submit" type="submit" >
+              Guardar
+          </button>
             <button class="btn-submit">
-                Registrar
+                Regresar
             </button>
         </div>
         <br/>
