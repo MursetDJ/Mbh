@@ -562,16 +562,16 @@ contact
     border-radius: 60px;
     color: rgb(255, 255, 255);
     font-weight: 400;
-    border: 1px solid #ffffff;
-    font-size: 14px;
-    padding: 6px 20px;
+    border: 2px solid #ffffff;
+    font-size: 18px;
+    padding: 8px 30px;
 }
 .form-control
 {
-    background-color: transparent;
-    border-radius: 0px;
-    color: #be9e21 !important;
-    border-color: #be9e21;
+    border-radius: 20px;
+    color: #000000 !important;
+    border-color: #7e7e7e;
+    
 }
 .form-control:focus {
     border-color: #be9e21;
@@ -590,8 +590,8 @@ input[type="file"]{
     margin-left: 10%;
 }
 .alineacionderecha{
-    margin-top: -550px;
-    margin-left: 50%;
+    margin-top: -500px;
+    margin-left: 840px;
 }
 .contact-form input.form-control{
     color: #fff;
@@ -660,6 +660,7 @@ contact
 }
 .relleno{
     margin-left: 150px;
+    margin-top: 20px;
     box-sizing: content-box;
     width: 40%;
     padding: 10%;

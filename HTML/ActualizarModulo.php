@@ -28,10 +28,10 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#main-header">Inicio de sesion</a></li>
+                <li class=""><a href="#main-header">Inicio de sesion</a></li>
                 <li class=""><a href="#feature">Interfaz</a></li>
                 <li class=""><a href="#service">Inpeccion</a></li>
-                <li class=""><a href="#portfolio">Observacion</a></li>
+                <li class="active"><a href="#portfolio">Observacion</a></li>
                 <li class=""><a href="#testimonial">Reunion</a></li>
               </ul>
             </div>
@@ -39,22 +39,32 @@
         </nav>
       </header>
       <div class="relleno">
-  
-        <h2>USUARIO</h2>
-            <input type="text" class="form-control" placeholder="Ingresa usuario" style="width: 50%; height: 40px;">    
-        <h2>CONTRASEÑA</h2>       
-            <input type="password" class="form-control" placeholder="Ingresa contraseña" style="width: 50%; height: 40px;">
-    
+        <h2>Codigo</h2>       
+            <form action="" method="get">
+                <input type="text" name="busqueda" placeholder="Ingrese código"><hr>
+                <input type="submit" name="Buscar" value="Buscar">
+            </form>
+          <?php
+            if(isset($_GET['enviar'])){
+              $busqueda= $_GET['busqueda'];
+              $consulta=$con->query("SELECT * FROM observacion WHERE obs_codgenerado LIKE '%$busqueda%'");
+            while($row=$consulta->fetch_array()){
+              echo $row['porque'].'<br>';
+            }
+            }
+           
+
+          ?>
         <div class="textoaux">
             <a href="Interfaz.html" >¿Olvidaste tu contraseña?</a>
         </div>
         <div class="distanciamiento">
             <button class="btn btn-primary width-100" style="height: 20%;width: 20%;" type="submit">
-                Ingresar
+               Ingresar
             </button>  
         
         <button class="btn btn-primary width-100" style="height: 20%;width: 20%;" type="submit">
-                Registrar
+                Regresar
             </button>
         </div>
         </div>    
