@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="Estilos/style-registro.css">
     <link rel="stylesheet" href="Estilos/style-datosinspector.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -150,24 +151,29 @@
                     <form >
                         <div class="form-group mb-3">
                             <label class="font-weight-bold">Descripción de la inspección<span class="text-danger"></span></label>
-                            <input type="text" class="form-control" placeholder="Añadir Descripción">
+                            <textarea rows="10" cols="50"></textarea>
                         </div>
 
 
                         <div class="form-row mb-2">
                             <div class="form-group col-md-6">
-                                <label class="font-weight-bold">Evidencia (Max 2Mb)<span class="text-danger" ></span></label>
-                                <button class="btn btn-primary width-100">Subir Evidencia</button>                    
+                                <!-- <label class="font-weight-bold">Evidencia (Max 2Mb)<span class="text-danger" ></span></label> -->
+                                <h3> Evidencia Max(2Mb) <input type="file" id="file"> <label for="file" class="btn-submit"> Subir Evidencia</label> </h3>
                 
                             </div>
 
                         </div>
 
 
+                        <div class="position-absolute testiomonial">
 
-                        <button class="btn btn-primary width-100">Guardar Inspección</button>
+                        
+                            <button class="btn btn-primary width-100">Guardar Inspección</button>
             
-                        <button class="btn btn-primary width-100">Enviar Inspección</button>
+                            <button class="btn btn-primary width-100">Enviar Inspección</button>
+                            
+                        </div>
+
                         
 
 
