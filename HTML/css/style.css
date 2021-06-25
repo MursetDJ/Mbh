@@ -593,6 +593,25 @@ input[type="file"]{
     margin-top: -500px;
     margin-left: 840px;
 }
+.buscar{
+    position: absolute;
+    padding: 5px;
+}
+.buscar input{
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #000000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+}
+.btna{
+background-color: rgb(255, 255, 255);
+color: white;
+padding: 5,5,5,5;
+}
 .contact-form input.form-control{
     color: #fff;
 }
