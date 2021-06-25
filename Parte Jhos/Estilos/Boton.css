@@ -1,0 +1,27 @@
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input.src {
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 25px;
+    color: #444;
+    border: 3px solid #a50559;
+
+    background: #fff url("search-icon.png") no-repeat 9px center;
+    width:  60px;
+    
+
+}
+
+input.src:hover {
+    width: 180px;
+    background-color: #fff;
+    border-color: #8c10b3;
+    box-shadow: 0 0 5px #6dcff680;
+}

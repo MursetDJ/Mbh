@@ -134,4 +134,21 @@ ul {
     .contact-info p {
         text-align: left;
     }
+
+
+
+    /* Estilo aparte D */
+    input[type="file"]{
+        display: none;
+}
+.btn-submit, .btn-submit:hover, .btn-submit:focus
+{
+    background-color: #1f7bc2;
+    border-radius: 60px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    border: 1px solid #3C97DD;
+    font-size: 14px;
+    padding: 6px 20px;
+}
 }
