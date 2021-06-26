@@ -3,4 +3,5 @@
     $userSesion = new UserSesion();
     $userSesion->closeSession();
     header("location: ../index.php")
+    
 ?>

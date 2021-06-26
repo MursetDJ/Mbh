@@ -15,10 +15,41 @@
 <body>
     <form action="" method="POST">
        <?php
+            include_once 'DB.php';
+            session_start();
+            if(isset($_GET['cerrar_sesion'])){
+                session_unset();
+                session_destroy();
+            }
+            if(isset($_SESSION['rol'])){
+                switch($_SESSION['rol']){
+                    case 1:
+                        header('location: admin.php');
+                    case 2:
+                        header('location: insp.php');
+                    case 3:
+                        header('location: usuario.php');
+                    break;
 
+                    }
+            }
+            if(isset($_POST['username']) && isset($_POST['password'])){
+        //echo "validacion de login";
+             $userForm= $_POST['username'];
+            $passForm= $_POST['password'];
+            $db= new dataBase();
+            if($user->userExists($userForm,$passForm)){
+           // echo "usuario validado";
+                $userSesion->setCurrentUser($userForm);
+                $user->setUser($userForm);
+
+            include_once 'home.php';
+             }
+            }
             if(isset($errorLogin)){
                 echo $errorLogin;
             }
+
 
        ?>
         <h2>Iniciar sesión</h2>
