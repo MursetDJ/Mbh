@@ -58,10 +58,12 @@
               $busqueda= $_GET['busqueda'];
               $consulta=$con->query("SELECT * FROM observacion WHERE obs_codgenerado LIKE '%$busqueda%'");
             while($row=$consulta->fetch_array()){
-              echo $row['porque'].'<br>';
+              echo $row['Obs_Nombre'].'<br>';
             }
             }
-           
+           if(isset($_GET[''])){
+
+           }
 
           ?> -->
       
