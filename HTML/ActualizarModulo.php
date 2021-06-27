@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <title>
     MBH Group S.A.C.
 </title>
@@ -42,22 +43,30 @@
         <h2>Codigo</h2>       
             <form action="" method="get">
                 <input type="text" name="busqueda" placeholder="Ingrese código"><hr>
-                <input type="submit" name="Buscar" value="Buscar">
+                <div class="buscar">
+                  <input type="text" name="Buscar" placeholder="Ingrese busqueda"> 
+                  <div class="btna">
+                    <i class="fa-thin" style="color: white;"></i>
+                  </div>
+
+                </div>
+                
             </form>
-          <?php
+            <br/>
+          <!-- <?php
             if(isset($_GET['enviar'])){
               $busqueda= $_GET['busqueda'];
               $consulta=$con->query("SELECT * FROM observacion WHERE obs_codgenerado LIKE '%$busqueda%'");
             while($row=$consulta->fetch_array()){
-              echo $row['porque'].'<br>';
+              echo $row['Obs_Nombre'].'<br>';
             }
             }
-           
+           if(isset($_GET[''])){
 
-          ?>
-        <div class="textoaux">
-            <a href="Interfaz.html" >¿Olvidaste tu contraseña?</a>
-        </div>
+           }
+
+          ?> -->
+        
         <div class="distanciamiento">
             <button class="btn btn-primary width-100" style="height: 20%;width: 20%;" type="submit">
                Ingresar
