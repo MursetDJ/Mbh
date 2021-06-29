@@ -524,6 +524,28 @@ Blog
     margin-top: 15px;
     display: inline-block;
 }
+.submenu{
+    position: -webkit-sticky;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 200ms;
+}
+.submenu li a{
+    display: block;
+    margin: 0;
+    text-align: left;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    color: #fff;
+    font-family: "Open sans";
+    text-decoration: none;
+}
+.nav li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
 .blog-img
 {
     position: relative;
