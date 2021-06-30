@@ -1,0 +1,102 @@
+
+:root{
+    --color-dark: #A1E5F8;
+    --color-dark-x: #2d343f;
+    /* Color de la caja de texto */
+    --color-dark-xx: #ffffff;
+    /* Color de las letras */
+    --color-light: #ffffff;
+    /* Color del fondo de la pagina */
+    --color-grey: #3C97DD;
+}
+
+body {
+    font-size: 'Roboto', sans-serif ;
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: var(--color-grey);
+    color: var(--color-light);
+    letter-spacing: .05rem;
+}
+
+.bg-light{
+    background-color: var(--color-light) !important;
+}
+
+.bg-dark{
+    background-color: var(--color-dark) !important;
+} 
+
+.p-6{
+    padding: 4rem 7rem;
+}
+
+.contact-box{
+    padding: 3rem;
+}
+
+.btn{
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+}
+
+
+.btn.outline-dark{
+    border: 2px solid var(--color-dark-xx);
+    
+}
+
+/* Cajas de Texto y forma de textbox */
+.form-control{
+    background-color: var(--color-dark-xx);
+    border: 2px solid var(--color-dark-xx);
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+}
+
+/*Cuadrado de la imagen*/
+.register-bg {
+    background-image: url('img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+}
+
+
+/* para el label del chexbox */
+.labelCheckbox{
+    padding: 3rem;
+    min-width: 10rem;
+
+}
+
+
+
+.testiomonial {
+    bottom: 10px
+}
+
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .register-bg {
+        min-height: 50vh;
+    }
+
+
+
+}
