@@ -1,5 +1,5 @@
 body {
-    background: #3498db;
+    background: linear-gradient(90deg, #69c3ff, #072d94);
     line-height: 1.4;
     font-family: 'Roboto', sans-serif;
     color: #67696c;
@@ -144,7 +144,7 @@ HEADER
 }
 
 .bg-color {
-    background-color: rgba(0, 176, 246);
+    background-color: linear-gradient(rgba(0, 176, 246));
     min-height: 650px;
 }
 
@@ -843,7 +843,7 @@ contact
     width: 40%;
     padding: 10%;
     align-items: flex-end;
-    background-color: rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .scrollToTop {
