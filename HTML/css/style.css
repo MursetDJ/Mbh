@@ -27,6 +27,13 @@ q:after {
     content: none;
 }
 
+.subrayadooff,
+.subrayadooff:hover {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -240,9 +247,13 @@ h2.bnr-sub-title {
     font-weight: 300;
 }
 
+.btn-download:hover {
+    color: black;
+    background-color: white;
+}
+
 .btn-download,
 .btn-more,
-.btn-download:hover,
 .btn-download:focus,
 .btn-more:focus {
     text-transform: uppercase;
@@ -684,8 +695,12 @@ contact
     background-color: rgb(73, 84, 105);
 }
 
+.btn-submit:hover {
+    color: black;
+    background-color: white;
+}
+
 .btn-submit,
-.btn-submit:hover,
 .btn-submit:focus {
     background-color: #000000;
     border-radius: 60px;

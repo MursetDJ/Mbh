@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,73 +12,88 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<title>
-    MBH Group S.A.C.
-</title>
+    <title>
+        MBH Group S.A.C.
+    </title>
 </head>|
+
 <body class="bg-color">|
-    <header id="main-header">
-        <h1>DATOS DE LA OBSERVACION</h1>
-        <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav navbar-right">
-                <li class=""><a href="#main-header">Inicio de sesion</a></li>
-                <li class=""><a href="#feature">Interfaz</a></li>
-                <li class=""><a href="#service">Inpeccion</a></li>
-                <li class="active"><a href="#portfolio">Observacion</a></li>
-                <li class=""><a href="#testimonial">Reunion</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <div class="fondo">
-      <div class="alineacioncentro">
-        <table border="0">
-          <tr>
-            <td width="50%">
-            <h4>Procedimiento a observar</h4>
-           </td>
-           <td width="50%">
-            <input style="width: 95%;" class="form-control" type="text">
-           </td>
-            
-          </tr>
-          
-          <tr>
-            <td>
-            <br/>
-          </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <h4>Fecha de observacion</h4>
-             </td>
-             <td width="50%" >
-              <input style="width: 75%;" class="form-control" size="60px" type="date">
-             </td>
-              <br/>
-          </tr>
-          
-          <tr>
-            <td>
-            <br/>
-          </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <h4>Periodicidad </h4>
-             </td>
-             <td width="50%">
-              <select style="width: 95%;" class="form-control">
+    <div class="header">
+
+        <header id="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+
+                <div class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <h1 style="color: white;"><a href="InsertarObservacion.html" class="subrayadooff">Observacion</a></h1>
+                        <li class=""><a href="InicioSes.html">Inicio de sesion</a></li>
+                        <li class=""><a href="Interfaz.html">Interfaz</a></li>
+                        <li class=""><a href="Interfaz.html">Inspeccion</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#1">Crear</a></li>
+                                <li><a href="#1">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#portfolio">Observacion</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#1">Crear</a></li>
+                                <li><a href="#1">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="reunion.html">Reunion</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#1">Crear</a></li>
+                                <li><a href="#1">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="fondo">
+        <div class="alineacioncentro">
+            <table border="0">
+                <tr>
+                    <td width="50%">
+                        <h4>Procedimiento a observar</h4>
+                    </td>
+                    <td width="50%">
+                        <input style="width: 95%;" class="form-control" type="text" placeholder="Nombre del procedimiento">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <h4>Fecha de observacion</h4>
+                    </td>
+                    <td width="50%">
+                        <input style="width: 75%;" class="form-control" size="60px" type="date">
+                    </td>
+                    <br/>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <h4>Periodicidad </h4>
+                    </td>
+                    <td width="50%">
+                        <select style="width: 95%;" class="form-control">
                 <option value="0"> Seleccione una opcion</option>
                 <option value="1"> Diaria</option>
                 <option value="2"> Semanal</option>
@@ -85,97 +101,97 @@
                 <option value="4"> Anual</option>
                 <option value="5"> Sin periodicidad</option>
               </select>
-             </td>
-              <br/>
-          </tr>
-          <tr>
-            <td>
-            <br/>
-          </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <h4>Clasificacion </h4>
-             </td>
-             <td width="50%">
-              <select style="width: 95%;" class="form-control">
+                    </td>
+                    <br/>
+                </tr>
+                <tr>
+                    <td>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <h4>Clasificacion </h4>
+                    </td>
+                    <td width="50%">
+                        <select style="width: 95%;" class="form-control">
                   <option value="0"> Seleccione una opcion</option>
                   <option value="1"> Programada</option>
                   <option value="2"> No programada</option>
                 </select>
-              </select>
-             </td>
-          </tr>
-          <tr>
-            <td>
-            <br/>
-          </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <h4>tipo</h4>
-             </td>
-             <td width="50%">
-              <input style="width: 95%;" class="form-control" placeholder="Ingrese tipo de observación" type="text">
-             </td>
-          </tr>
-          <tr>
-            <td>
-              <br/>
-            </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <input type="text" placeholder="Area observada" style="width: 95%;" class="form-control"> 
-             </td>
-             <td width="50%">
-              <input type="text" placeholder="Subarea observada" style="width: 95%;" class="form-control">
-             </td>
-          </tr>
-          <tr>
-            <td>
-              <br/>
-            </td>
-          </tr>
-          <tr>
-            <td width="50%">
-              <input type="text" placeholder="Empresa Observada" style="width: 95%;" class="form-control">
-             </td>
-             <td width="50%">
-              <input type="checkbox">Es interna
-             </td>
-          </tr>
-          <tr>
-            <td>
-              <br/>
-            </td>
-          </tr>
-          <td width="50%">
-            <input type="text" placeholder="Responsable del Área (DNI o fotocheck)" style="width: 150%;" class="form-control">
-           </td>    
-        </tr>
-        </table>
-      </div>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <h4>tipo</h4>
+                    </td>
+                    <td width="50%">
+                        <input style="width: 95%;" class="form-control" placeholder="Ingrese tipo de observación" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <input type="text" placeholder="Area observada" style="width: 95%;" class="form-control">
+                    </td>
+                    <td width="50%">
+                        <input type="text" placeholder="Subarea observada" style="width: 95%;" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <input type="text" placeholder="Empresa Observada" style="width: 95%;" class="form-control">
+                    </td>
+                    <td width="50%">
+                        <input type="checkbox">Es interna
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br/>
+                    </td>
+                </tr>
+                <td width="50%">
+                    <input type="text" placeholder="Responsable del Área (DNI o fotocheck)" style="width: 150%;" class="form-control">
+                </td>
+                </tr>
+            </table>
+        </div>
         <div class="alineacionderecha">
-          <br/>
-          <h3>Descripcion de la observacion</h3>
-        <textarea rows="10" cols="50"></textarea>
-        
-        <h4>Evidencia <input type="file" id="file"> <label for="file" class="btn-submit">Subir evidencia</label> Max 2Mb</h4>
-       
-        
-        <div class="distanciamientoObservacion">
-            <button class="btn-submit" type="submit" >
+            <br/>
+            <h3>Descripcion de la observacion</h3>
+            <textarea rows="10" cols="50"></textarea>
+
+            <h4>Evidencia <input type="file" id="file"> <label for="file" class="btn-submit">Subir evidencia</label> Max 2Mb</h4>
+
+
+            <div class="distanciamientoObservacion">
+                <button class="btn-submit" type="submit">
                 Enviar
             </button>
-            <button class="btn-submit" type="submit" >
+                <button class="btn-submit" type="submit">
               Guardar
           </button>
-            <button class="btn-submit">
+                <button class="btn-submit" role="link" onclick="window.location='interfaz.html'">
                 Regresar
             </button>
+            </div>
+            <br/>
         </div>
-        <br/>
-        </div>
-      </div>    
+    </div>
 </body>
