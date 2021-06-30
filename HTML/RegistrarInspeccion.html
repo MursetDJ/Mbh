@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
 
@@ -25,7 +27,43 @@
 </head>
 
 <body>
+    <div class="header">
 
+        <header id="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+
+                <div class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <h1 style="color: white; right: 82%;"><a href="RegistrarInspeccion.html" class="subrayadooff">Interfaz de inspeccion</a></h1>
+                        <li class=""><a href="InicioSes.html">Inicio de sesion</a></li>
+                        <li class=""><a href="Interfaz.html">Interfaz</a></li>
+                        <li class="active"><a href="RegistrarInspeccion.html">Inpeccion</a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a href="RegistrarInspeccion.html">Crear</a></li>
+                                <li><a href="#1">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="InsertarObservacion.html">Observacion</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#1">Crear</a></li>
+                                <li><a href="#1">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="reunion.html">Reunion</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#1">Crear</a></li>
+                                <li><a href="#1">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
     <section class="contact-box">
 
         <h1 class="font-weight-bold mb-3"> Datos de Inspeccion </h1>
