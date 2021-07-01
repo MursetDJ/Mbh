@@ -3,15 +3,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #3C97DD;
-    color: #fff;
-    line-height: 1.6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 'Roboto', sans-serif ;
-    padding: 0 1.5em;
-}
-
 .container {
     max-width: 1170px;
     margin-left: auto;
@@ -33,12 +24,14 @@ ul {
     color: #3C97DD;
 }
 
+
 /* contender el formulario */
+
 .contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255 , .4);
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .4);
 }
 
-.contact-wrapper > * {
+.contact-wrapper>* {
     padding: 1em;
 }
 
@@ -46,7 +39,9 @@ ul {
     background: #A1E5F8;
 }
 
+
 /* para dividir  */
+
 .contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -65,11 +60,9 @@ ul {
     grid-column: 1 / 3;
 }
 
-.clase-lista-desplegable{
+.clase-lista-desplegable {
     width: 100%;
     padding: .5rem;
-  
-
 }
 
 .contact-form form button,
@@ -89,10 +82,8 @@ ul {
     padding: 1rem 2rem;
     border-radius: 5rem;
     min-width: 10rem;
-
     background: #3C97DD;
     border: 2px;
-
     /* border-radius: 5rem;
     padding: 1rem 2rem;
     min-width: 10rem;
@@ -107,48 +98,19 @@ ul {
     outline: 0;
 }
 
+
 /* CONTACT INFO */
+
 .contact-info {
     background: #3C97DD;
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
 }
 
+
 /* LARGE SIZE  para pantallas grandes*/
-@media(min-width: 700px) {
-    body {
-        padding: 0 4em;
-    }
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .contact-wrapper > * {
-        padding: 2em;
-    }
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        text-align: left;
-    }
-
-
-
-    /* Estilo aparte D */
-    input[type="file"]{
-        display: none;
-}
-.btn-submit, .btn-submit:hover, .btn-submit:focus
-{
-    background-color: #1f7bc2;
-    border-radius: 60px;
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    border: 1px solid #3C97DD;
-    font-size: 14px;
-    padding: 6px 20px;
-}
-}
