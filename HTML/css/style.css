@@ -1,4 +1,5 @@
 body {
+    background: linear-gradient(90deg, #69c3ff, #072d94);
     line-height: 1.4;
     font-family: 'Roboto', sans-serif;
     color: #67696c;
@@ -26,9 +27,25 @@ q:after {
     content: none;
 }
 
+.subrayadooff,
+.subrayadooff:hover {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    position: fixed;
+    right: 85%;
+    margin-bottom: -10%;
+    text-align: left;
 }
 
 h1,
@@ -121,24 +138,22 @@ HEADER
 ***********************************/
 
 .header {
-    background: url('../img/bg-banner02.jpg') no-repeat fixed;
     background-size: cover;
-    min-height: 650px;
+    min-height: 80px;
     position: relative;
 }
 
 .bg-color {
-    background-color: rgba(0, 176, 246);
+    background-color: linear-gradient(rgba(0, 176, 246));
     min-height: 650px;
 }
 
 #main-header {}
 
 .navbar-default {
-    background-color: transparent;
+    background-color: gray;
     border: 0px;
-    padding: 20px 0;
-    transition: all 0.3s;
+    padding: 0px 100px;
 }
 
 .navbar-default .navbar-brand:focus,
@@ -147,7 +162,7 @@ HEADER
 }
 
 .top-nav-collapse {
-    padding: 0;
+    padding: 2;
     background: rgba(64, 75, 97, 0.9);
 }
 
@@ -163,7 +178,7 @@ HEADER
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .navbar-brand {
@@ -176,27 +191,33 @@ HEADER
 
 .navbar-default .navbar-nav>li>a {
     padding: 5px 10px;
-    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 12px;
     line-height: 54px;
-    font-weight: 400;
+    font-weight: 40px;
     text-transform: uppercase;
     background: transparent;
-    color: #808080;
+    color: #000000;
     -webkit-transition: color 0.2s ease-out;
     transition: color 0.2s ease-out;
 }
 
-.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a {
+    color: white;
+    background: transparent;
+}
+
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-    color: #ffffff;
-    background-color: transparent;
+    color: white;
+    background: transparent;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
-    background-color: transparent;
-    color: #ffffff;
+    color: white;
 }
 
 .banner-info {
@@ -210,7 +231,7 @@ HEADER
 }
 
 h1.bnr-title {
-    font-size: 18px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -226,9 +247,13 @@ h2.bnr-sub-title {
     font-weight: 300;
 }
 
+.btn-download:hover {
+    color: black;
+    background-color: white;
+}
+
 .btn-download,
 .btn-more,
-.btn-download:hover,
 .btn-download:focus,
 .btn-more:focus {
     text-transform: uppercase;
@@ -616,6 +641,24 @@ Blog
     display: inline-block;
 }
 
+.nav li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
 .blog-img {
     position: relative;
     margin-bottom: 20px;
@@ -652,12 +695,16 @@ contact
     background-color: rgb(73, 84, 105);
 }
 
+.btn-submit:hover {
+    color: black;
+    background-color: white;
+}
+
 .btn-submit,
-.btn-submit:hover,
 .btn-submit:focus {
     background-color: #000000;
     border-radius: 60px;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.678);
     font-weight: 400;
     border: 2px solid #ffffff;
     font-size: 18px;
@@ -796,7 +843,7 @@ contact
     width: 40%;
     padding: 10%;
     align-items: flex-end;
-    background-color: rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .scrollToTop {

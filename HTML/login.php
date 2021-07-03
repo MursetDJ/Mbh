@@ -38,6 +38,26 @@
              $userForm= $_POST['username'];
             $passForm= $_POST['password'];
             $db= new dataBase();
+            $query= $db->connect()->prepare('SELECT * FROM usuarios WHERE username= :username AND password =:password');
+            $query->execute(['username'=>$username, 'password'=>$password]);
+            $row=$query->fetch(PDO::FETCH_NUM);
+            if($row==true){
+                $row=$row[3];
+                $_SESSION['rol']=$rol;
+                switch($_SESSION['rol']){
+                    case 1:
+                        header('location: admin.php');
+                    case 2:
+                        header('location: insp.php');
+                    case 3:
+                        header('location: usuario.php');
+                    break;
+
+                    }
+            }
+            else{
+
+            }
             if($user->userExists($userForm,$passForm)){
            // echo "usuario validado";
                 $userSesion->setCurrentUser($userForm);
