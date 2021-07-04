@@ -23,29 +23,44 @@
 </head>
 
 <body class="bg-color">
-    <header id="main-header">
-        <h1>DATOS DE LA REUNION</h1>
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="header">
+
+        <header id="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+
+                <div class="collapse navbar-collapse">
+
                     <ul class="nav navbar-nav navbar-right">
-                        <li class=""><a href="#main-header">Inicio de sesion</a></li>
-                        <li class=""><a href="#feature">Interfaz</a></li>
-                        <li class=""><a href="#service">Inpeccion</a></li>
-                        <li class=""><a href="#portfolio">Observacion</a></li>
-                        <li class="active"><a href="#testimonial">Reunion</a></li>
+                        <h1 style="color: white;"><a href="InsertarObservacion.html" class="subrayadooff">Observacion</a></h1>
+                        <li class=""><a href="InicioSes.html">Inicio de sesion</a></li>
+                        <li class=""><a href="Interfaz.html">Interfaz</a></li>
+                        <li class=""><a href="Interfaz.html">Inspeccion</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="InsertarObservacion.html">Crear</a></li>
+                                <li><a href="Buscar-Inspeccion.html">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="#portfolio">Observacion</a>
+                            <ul class="dropdown-menu">
+                                <li class=""><a href="InsertarObservacion.html">Crear</a></li>
+                                <li><a href="#1">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="reunion.html">Reunion</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Insertar-Reunion.html">Programar </a></li>
+                                <li><a href="#1">Reunión</a></li>
+                                <li><a href="#1">Actualizar</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+    </div>
+
     <div class="fondo">
         <div class="alineacioncentro">
             <table border="0">
@@ -56,8 +71,8 @@
                         <h4>Clasificación </h4>
                     </td>
                     <td width="50%">
-                        <select style="width: 95%;" class="form-control">
-                <option value="0"> Seleccione una opcion</option>
+                        <select style=" width: 95%;" class="form-control">
+                <option value="0" > Seleccione una opcion</option>
                 <option value="1"> Planificada</option>
                 <option value="2"> No planificada</option>
               </select>

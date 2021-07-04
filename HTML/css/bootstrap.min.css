@@ -138,10 +138,11 @@ button.bg-dark:hover {
     margin-bottom: 3rem!important
 }
 
-.form-control {
+
+/* .form-control {
     display: block;
     width: 100%;
-    padding: .375rem .75rem;
+    padding: 1rem 1rem;
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
@@ -150,8 +151,10 @@ button.bg-dark:hover {
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
-}
+} */
 
+
+/* 
 .form-control::-ms-expand {
     background-color: transparent;
     border: 0
@@ -198,7 +201,7 @@ button.bg-dark:hover {
 
 select.form-control:not([size]):not([multiple]) {
     height: calc(2.25rem + 2px)
-}
+} */
 
 .row {
     display: -webkit-box;
@@ -220,7 +223,8 @@ select.form-control:not([size]):not([multiple]) {
     position: absolute!important
 }
 
-select.form-control:focus::-ms-value {
+
+/* select.form-control:focus::-ms-value {
     color: #495057;
     background-color: #fff
 }
@@ -229,7 +233,7 @@ select.form-control:focus::-ms-value {
 .form-control-range {
     display: block;
     width: 100%
-}
+} */
 
 .col-md-6,
 .col-lg-12 {
@@ -416,7 +420,7 @@ select,
 textarea {
     margin: 0;
     font: inherit;
-    color: inherit
+    color: inherit;
 }
 
 button {
@@ -1679,7 +1683,9 @@ select,
 textarea {
     font-family: inherit;
     font-size: inherit;
-    line-height: inherit
+    line-height: inherit;
+    background: #002147;
+    color: white;
 }
 
 a {
@@ -3411,6 +3417,9 @@ output {
     color: #555
 }
 
+
+/* Aca se esta utilizando para las interfaces */
+
 .form-control {
     display: block;
     width: 100%;
@@ -3418,11 +3427,11 @@ output {
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
+    border-radius: 20px;
+    color: white;
+    background-color: #002147;
     background-image: none;
     border: 1px solid #ccc;
-    border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;

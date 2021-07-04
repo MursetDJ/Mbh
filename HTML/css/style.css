@@ -711,11 +711,12 @@ contact
     padding: 8px 30px;
 }
 
-.form-control {
+
+/* .form-control {
     border-radius: 20px;
     color: #000000 !important;
     border-color: #7e7e7e;
-}
+} */
 
 .form-control:focus {
     border-color: #be9e21;
@@ -738,7 +739,7 @@ input[type="file"] {
 }
 
 .alineacionderecha {
-    margin-top: -500px;
+    margin-top: -540px;
     margin-left: 840px;
 }
 
