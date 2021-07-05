@@ -199,9 +199,9 @@ HEADER
     font-weight: 40px;
     text-transform: uppercase;
     background: transparent;
-    color: #000000;
+    color: #acacac;
     -webkit-transition: color 0.2s ease-out;
-    transition: color 0.2s ease-out;
+    transition: color 0.5s ease-out;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -218,6 +218,7 @@ HEADER
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover {
     color: white;
+    font-size: 14px;
 }
 
 .banner-info {
@@ -747,6 +748,7 @@ input[type="file"] {
 .alineacioncentro {
     margin-top: 0;
     margin-left: 10%;
+    color: #FFF;
 }
 
 .alineacionderechareu {
@@ -757,6 +759,7 @@ input[type="file"] {
 .alineacionderecha {
     margin-top: -540px;
     margin-left: 840px;
+    color: #FFF;
 }
 
 .buscar {

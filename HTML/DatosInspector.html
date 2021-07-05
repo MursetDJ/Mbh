@@ -1,85 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos del Inspector</title>
 
- <!-- FONT AWESOME -->
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
- <!-- FONT BOTOME -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-<!-- enlazar al style -->
-<link rel="stylesheet" href="Estilos/style-registro.css">
-<link rel="stylesheet" href="Estilos/style-datosinspector.css">
+    <!-- FONT BOTOME -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- enlazar al style -->
+
 </head>
+
 <body>
-    
-<div class="content">
-    
-    <div class="logo">
-        <br/>
+    <div class="header">
+
+        <header id="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+
+                <div class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <h1 style="color: white;"><a href="InsertarObservacion.html" class="subrayadooff">Observacion</a></h1>
+                        <li class=""><a href="InicioSes.html">Inicio de sesion</a></li>
+                        <li class=""><a href="Interfaz.html">Interfaz</a></li>
+                        <li class=""><a href="DatosInspector.html">Inspeccion</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="InsertarObservacion.html">Crear</a></li>
+                                <li><a href="Buscar_Inspeccion.html">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#portfolio">Observacion</a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a href="InsertarObservacion.html">Crear</a></li>
+                                <li><a href="#1">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="reunion.html">Reunion</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="reunion.html">Crear</a></li>
+                                <li><a href="#1">Actualizar</a></li>
+                                <li><a href="#1">Cerrar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
     </div>
 
-    <!-- Contenedor para agrupar todo -->
-    <div class="contact-wrapper">
-        <!-- Formulario de datos -->
-        <div class="contact-form ">
-            <h3>Datos del Inspector</h3>
 
-            <form action=" ">
-                <p>
-                    <label class="font-weight-bold">DNI o Fotocheck</label>
-                    <input type="text" class="form.control" placeholder="Ingrese su DNI o Fotocheck">
-                    
-                </p>
-            
-                <p>
-                    <label class="font-weight-bold">Buscar Dni o Fotocheck</label>
-                    <button >Buscar</button>
-                
-                </p>
+    <!-- Formulario de datos -->
 
-
-                <div class="contact-form">
-                    <!-- <p>
+    <h2 class="content">Datos del Inspector</h2>
+    <div class="container">
+        <div class="form-group">
+            <label class="texto" style="font-size: 15px;"> Seleccione tipo de usuario</label>
+            <select class="form-control tamaño">
+                        <option disabled selected= ""> Seleccionar</option>
+                        <option > Usuario de la empresa</option>
+                        <option > Usuario Externo</option>
+                    </select>
+        </div>
+        <div class="form-group">
+            <label class="texto">DNI o Fotocheck</label>
+            <input type="text" class="form-control tamaño" placeholder="Ingrese su DNI o Fotocheck">
+        </div>
+        <div class="form-group">
+            <label class="texto">Búsqueda inspector</label>
+            <button class="btn-control tamaño" style="width: 30%; border-radius: 20px;">Buscar</button>
+        </div>
+        <div class="form-group">
+            <!-- <p>
                         <label class="font-weight-bold">Tipo de Usuario</label>
                         <input type="text" class="form.control" placeholder="Seleccione el tipo de usuario">
                     </p> -->
-                    
-    
-                    <p>
-                        <label class="font-weight-bold">Cargo</label>
-                        <input type="text" class="form.control" placeholder="Cargo">
-                        
-                    </p>
-                    <p>
-                        <label class="font-weight-bold">Nombre</label>
-                        <input type="text" class="form.control" placeholder="Ingrese su Nombre">
-                        
-                    </p>
-    
-
-                </div>
-
-                
-
-                <p class="block">
-                    <button > Regresar</button>
-                </p>
-                <p class="block">
-                    <button>Siguiente</button>
-                </p>
-
-            </form>
-
+            <label class="texto">Cargo</label>
+            <input type="text" class="form-control tamaño" placeholder="Cargo">
         </div>
-
+        <div class="form-group">
+            <label class="texto">Nombre</label>
+            <input type="text" class="form-control tamaño" placeholder="Ingrese su Nombre">
+        </div>
+        <br>
+        <br>
+        <div style="margin-left: 50%;">
+            <button class="btn-primary" role="link" onclick="window.location='interfaz.html'"> Regresar</button>
+            <button class="btn-primary">Siguiente</button>
+        </div>
         <!-- Formulario de informacion -->
         <div class="contact-form">
 
@@ -93,28 +112,9 @@
                 
                 
             </form> -->
-
-            <div class="contact-form ">
-                <h3> Seleccion el Tipo de Usuario</h3>
-    
-                <form action=" ">
-                    <p>
-                        Seleccione tipo de usuario
-                        <select class="clase-lista-desplegable">
-                            <option disabled selected= ""> Seleccionar</option>
-                            <optgroup label="Usuarios de la empresa"></optgroup>
-                            <option > Usuario Interno 1</option>
-                            <option > Usuario Interno 2</option>
-                            <option > Usuario Interno 3</option>
-                            <optgroup label="Usuarios externos a la empresa"></optgroup>
-                            <option > Usuario Externo</option>
-                        </select>
-                    </p>
-                </form>
-            </div>
-        </div> 
+        </div>
     </div>
-</div>
 
 </body>
+
 </html>
