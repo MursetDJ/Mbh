@@ -30,28 +30,29 @@
                 <div class="collapse navbar-collapse">
 
                     <ul class="nav navbar-nav navbar-right">
-                        <h1 style="color: white;"><a href="InsertarObservacion.html" class="subrayadooff">Observacion</a></h1>
-                        <li class=""><a href="InicioSes.html">Inicio de sesion</a></li>
+                        <h1 style="color: white;"><a href="InsertarObservacion.html" class="subrayadooff">Crear
+                                Inspeccion</a></h1>
+                        <li class=""><a href="Registrarse.html">Registrar usuario</a></li>
                         <li class=""><a href="Interfaz.html">Interfaz</a></li>
-                        <li class=""><a href="DatosInspector.html">Inspeccion</a>
+                        <li class="active"><a href="DatosInspector.html">Inspeccion</a>
                             <ul class="dropdown-menu">
-                                <li><a href="InsertarObservacion.html">Crear</a></li>
+                                <li class="active"><a href="DatosInspector.html">Crear</a></li>
                                 <li><a href="Buscar_Inspeccion.html">Actualizar</a></li>
                                 <li><a href="#1">Cerrar</a></li>
                             </ul>
                         </li>
-                        <li class="active"><a href="#portfolio">Observacion</a>
+                        <li class=""><a href="#portfolio">Observacion</a>
                             <ul class="dropdown-menu">
-                                <li class="active"><a href="InsertarObservacion.html">Crear</a></li>
-                                <li><a href="#1">Actualizar</a></li>
+                                <li class=""><a href="InsertarObservacion.html">Crear</a></li>
+                                <li><a href="Buscar_observacion.html">Actualizar</a></li>
                                 <li><a href="#1">Cerrar</a></li>
                             </ul>
                         </li>
                         <li class=""><a href="reunion.html">Reunion</a>
                             <ul class="dropdown-menu">
-                                <li><a href="reunion.html">Crear</a></li>
-                                <li><a href="#1">Actualizar</a></li>
-                                <li><a href="#1">Cerrar</a></li>
+                                <li><a href="reunion.html">Programar </a></li>
+                                <li><a href="Insertar_Reunion.html">Reunión</a></li>
+                                <li><a href="Buscar_Reunion.html">Actualizar</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -68,10 +69,15 @@
         <div class="form-group">
             <label class="texto" style="font-size: 15px;"> Seleccione tipo de usuario</label>
             <select class="form-control tamaño">
-                        <option disabled selected= ""> Seleccionar</option>
-                        <option > Usuario de la empresa</option>
-                        <option > Usuario Externo</option>
-                    </select>
+                <option disabled selected=""> Seleccionar</option>
+                <optgroup label="Usuario Interno">
+                    <option>Este usuario</option>
+                    <option> Otro usuario de la empresa</option>
+                </optgroup>
+                <optgroup label="Otros">
+                    <option> Usuario Externo</option>
+                </optgroup>
+            </select>
         </div>
         <div class="form-group">
             <label class="texto">DNI o Fotocheck</label>
