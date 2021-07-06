@@ -1,25 +1,18 @@
-.box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 input.src {
     padding: 9px 10px 9px 28px;
     outline: none;
     font-size: 18px;
     border-radius: 25px;
     transition: 500ms;
-    color: #444;
+    color: rgb(255, 255, 255);
     border: 3px solid #a50559;
-    background: #fff url("search-icon.png") no-repeat 9px center;
+    background: rgb(0, 0, 0) url("search-icon.png") no-repeat 9px center;
     width: 180px;
 }
 
 input.src:hover {
     transition: 500ms;
-    background-color: #fff;
-    border-color: #5c10b3;
+    background-color: rgb(56, 55, 55);
+    border-color: #ffffff;
     box-shadow: 0 0 5px #6dcff680;
 }
