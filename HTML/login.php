@@ -15,31 +15,22 @@
 <body>
     <form action="" method="POST">
        <?php
-            include_once 'DB.php';
+            include_once 'include/DB.php';
             session_start();
+            
             if(isset($_GET['cerrar_sesion'])){
                 session_unset();
                 session_destroy();
+            
             }
-            if(isset($_SESSION['rol'])){
-                switch($_SESSION['rol']){
-                    case 1:
-                        header('location: admin.php');
-                    case 2:
-                        header('location: insp.php');
-                    case 3:
-                        header('location: usuario.php');
-                    break;
-
-                    }
-            }
-            if(isset($_POST['username']) && isset($_POST['password'])){
+            
+            if(isset($_POST['User_NombreUsuario']) && isset($_POST['User_password'])){
         //echo "validacion de login";
-             $userForm= $_POST['username'];
-            $passForm= $_POST['password'];
+             $userForm= $_POST['User_NombreUsuario'];
+            $passForm= $_POST['User_password'];
             $db= new dataBase();
-            $query= $db->connect()->prepare('SELECT * FROM usuarios WHERE username= :username AND password =:password');
-            $query->execute(['username'=>$username, 'password'=>$password]);
+            $query= $db->connect()->prepare('SELECT * FROM usuario WHERE User_NombreUsuario= :User_NombreUsuario AND User_password =:User_password');
+            $query->execute(['User_NombreUsuario'=>$username, 'User_password'=>$password]);
             $row=$query->fetch(PDO::FETCH_NUM);
             if($row==true){
                 $row=$row[3];
@@ -74,9 +65,9 @@
        ?>
         <h2>Iniciar sesión</h2>
         <p>Nombre de usuario: <br>
-        <input type="text" name="username"></p>
+        <input type="text" name="User_NombreUsuario"></p>
         <p>Password: <br>
-        <input type="password" name="password"></p>
+        <input type="password" name="User_password"></p>
         <input type="submit" value="Iniciar Sesión">
     </form>
 </body>

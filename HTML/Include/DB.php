@@ -6,10 +6,10 @@
         private $password;
         private $charset;
         public function __construct(){
-            $this->host='';
+            $this->host='localhost';
             $this->db='mbh';
             $this->usuario='root';
-            $this->password = '';
+            $this->password = "Jhosmer1997*";
             $this->charset = 'utf8mb4';
         }
         function connect(){
@@ -20,7 +20,7 @@
                     PDO::ATTR_EMULATE_PREPARES   => false,
                 ];
                 
-                $pdo = new PDO($connection, $this->user, $this->password, $options);
+                $pdo = new PDO($connection, $this->usuario, $this->password, $options);
         
                 return $pdo;
             }catch(PDOException $e){
@@ -29,5 +29,4 @@
         }
     }
 
-  
 ?>
